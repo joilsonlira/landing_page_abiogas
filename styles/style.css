@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     list-style: none;
+    text-decoration: none;
     /* font-size: 62.4%; */
 }
 body{
@@ -26,6 +27,7 @@ hr{
 }
 #menu_container{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 20vh;
@@ -45,14 +47,19 @@ img{
 .menu{
     display: flex;
     align-items: center;
-    height: 20%;
+    height: 25%;
+    border-bottom: #F5863E 2px solid;
+    padding: 0.5rem;
     /* background-color: aquamarine; */
 }
 .menu > li{
     color: white;
     margin: 0.4rem;
     list-style: none;
-    
+}
+.menu li:hover{
+    color: white;
+    background-color: #F5863E;
 }
 #info, #videos, #newslatter, #cronograma, #patrocinadores{
     margin-top: 1rem;
