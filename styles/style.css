@@ -2,13 +2,18 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'gotham_book';
     list-style: none;
     text-decoration: none;
     /* font-size: 62.4%; */
 }
+:root{
+    --color-light: #e7e6e6;
+    --color-main: #007078;
+    --color-second: #e28431;
+}
 body{
-    background-color: #f8f8f8;
+    background-color: var(--color-light);
 }
 
 main{
@@ -48,7 +53,7 @@ img{
     display: flex;
     align-items: center;
     height: 25%;
-    border-bottom: #F5863E 2px solid;
+    border-bottom: var(--color-second) 2px solid;
     padding: 0.5rem;
     /* background-color: aquamarine; */
 }
@@ -59,7 +64,7 @@ img{
 }
 .menu li:hover{
     color: white;
-    background-color: #F5863E;
+    background-color: var(--color-second);
 }
 #info, #videos, #newslatter, #cronograma, #patrocinadores{
     margin-top: 1rem;
@@ -123,7 +128,7 @@ article .slide_header{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #1F9483;
+    background-color: var(-color-main);
 }
 
 #videos{
@@ -169,7 +174,7 @@ article .slide_header{
     display: flex;
     /* flex-direction: row; */
     width: 100%;
-    background-color: #F5863E;
+    background-color: var(--color-second);
 }
 .news_article{
     display: flex;
@@ -195,7 +200,7 @@ article .slide_header{
     justify-content: center;
     flex-direction: column;
     padding: 1rem;
-    background-color: #F5863E;
+    background-color: var(--color-second);
     width: 40%;
 }
 
@@ -216,7 +221,7 @@ article .slide_header{
     font-size: 24px;
     font-weight: 400;
     color: white;
-    background-color: #1F9483;
+    background-color: var(--color-main);
 }
 
 
@@ -255,7 +260,7 @@ article .slide_header{
     color: white;
     height: 4rem;
     border-radius: 0 50px 50px 0px;
-    background-color: #1F9483;
+    background-color: var(--color-main);
 }
 .detail p{
     font-size: 16px;
@@ -300,7 +305,7 @@ article .slide_header{
 }
 #patrocinadores{
     text-align: center;
-    background-color: #F5863E;
+    background-color: var(--color-second);
 }
 
 #patrocinadores h3{
