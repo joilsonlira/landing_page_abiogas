@@ -5,6 +5,9 @@
     font-family: 'Poppins', sans-serif;
     /* font-size: 62.4%; */
 }
+body{
+    background-color: #f8f8f8;
+}
 
 main{
     width: 80%;
@@ -48,8 +51,9 @@ img{
     
 }
 #info, #videos, #newslatter, #cronograma, #patrocinadores{
+    margin-top: 1rem;
     width: 100%;
-    height: 30rem;
+    /* height: 30rem; */
     /* border-radius: 50px 50px 0 0; */
     /* background-color: antiquewhite; */
 }
@@ -59,6 +63,7 @@ img{
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 30rem;
     /* border-radius: 50px 50px 0 0; */
     background-image: url('/components/images/biogas.jpg');
     background-position: center center;
@@ -108,7 +113,7 @@ article{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.8);
 }
-article header{
+article .slide_header{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,45 +122,184 @@ article header{
 }
 
 #videos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 30rem;
     background-color: transparent;
+}
+#videos .videos_header{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    padding: 1rem;
+    width: 100%;
+    height: 10%;
+    /* background-color: aquamarine; */
+}
+#videos .main_video_container{
+    padding: 1rem;
+    width: 100%;
+    height: 65%;
+    /* background-color: #373435; */
+}
+.main_video[poster] {
+    width: 100%;
+    height: 100%;
+}
+.galary_video_container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    /* background-color: coral; */
+}
+.galary_video_container > img{
+    width: 20%;
+    height: 100%;
 }
 
 #newslatter{
     display: flex;
+    /* flex-direction: row; */
+    width: 100%;
     background-color: #F5863E;
 }
 .news_article{
     display: flex;
     flex-direction: column;
+    width: 60%;
 }
-#newslatter .content{
-    height: 70%;
-}
-.news_header{
-    height: 10%;
+.news_article .news_header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    width: 100%;
+    height: 15%;
+    padding: 1rem;
     background-color: transparent;
 }
-
-.news_footer{
-    border-radius: 0;
-    height: 20%;
-    background-color: #F5863E;
+.news_article img{
+    width: 100%;
 }
-form{
+#newslatter > form{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 1rem;
+    background-color: #F5863E;
+    width: 40%;
 }
 
 #cronograma{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 100%;
     height: 60rem;
-    background-color: transparent;
+    /* background-color: coral; */
 }
-
+#cronograma .cronograma_title{
+    font-size: 36px;
+}
+#cronograma .cronograma_description{
+    padding: 1rem;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 500;
+    width: 60%;
+}
+.detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    /* background-color: gray; */
+}
+.detail h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    height: 4rem;
+    border-radius: 0 50px 50px 0px;
+    background-color: #1F9483;
+}
+.detail p{
+    font-size: 16px;
+    font-weight: 400;
+    width: 85%;
+    text-align: center;
+}
+.cards_container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: burlywood; */
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    text-align: left;
+    width: 30%;
+    height: 8rem;
+    /* background-color: white; */
+}
+.card img{
+    width: 10rem;
+    clip-path: circle();
+}
+.card .card_title{
+    font-size: 24px;
+    font-weight: 400;
+}
+.card_description{
+    font-size: 18px;
+    font-weight: 400;
+}
+.card_detail{
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 1rem;
+}
 #patrocinadores{
     background-color: #F5863E;
+}
+#patrocinadores .banner_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+#patrocinadores .banner_container img{
+    width: 60%;
+}
+#patrocinadores .patrocinadores_logo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+#patrocinadores .patrocinadores_logo img{
+    margin: 0 0.5rem 1rem 0.5rem;
+    width: 20%;
+    background-color: white;
 }
 
 footer{
