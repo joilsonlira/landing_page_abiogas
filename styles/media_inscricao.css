@@ -1,0 +1,90 @@
+:root{
+    --color-second: #e28431;
+    --color-blue: #2dc3ca;
+    --color-medium-blue: #0099a8;
+    --color-main: #007078;
+    --color-light-blue: #75d3d7;
+    --color-dark: #3f3f3f;
+    --color-medium-dark: #44546a;
+    --color-light: #e7e6e6;
+}
+
+@media screen and (min-width: 1024px) {
+    .background{
+        display: block;
+        position: relative;
+        background-image: url(/components/images/biogas.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        top: 0;
+        width: 100vw;
+        height: 50vh;
+    }
+    main{
+        position: absolute;
+        display: grid;
+        grid-template-rows: 10vh 20vh auto;
+        grid-template-areas: 
+        'header header header'
+        'description description description'
+        'container container container'
+        ;
+        top: 0;
+        min-width: 1440px;
+    }
+    #main_header{
+        grid-area: header;
+    }
+    #description_container {
+        grid-area: description;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 50%;
+        background-color: transparent;
+    }
+    #container{
+        grid-area: container;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            'info form procedure'
+            ;
+    }
+    #information_container{
+        grid-area: info;
+    }
+    #form_container{
+        grid-area: form;
+        display: flex;
+        padding: 1rem;
+        margin: 0 auto;
+        width: 25vw;
+        height: 100%;
+        border-radius: 10px;
+        }
+        #form_container form{
+            height: 100%;
+        }
+        #form_container form .options_form .switch {
+            position: relative;
+            display: inline-block;
+            width: 3vw;
+            height: 2.5vh;
+            }
+            #form_container form .options_form .switch .slider:before {
+                height: 1rem;
+                width: 1rem;
+                left: 0.2rem;
+                }
+    #form_container form .options_form p{
+        font-size: 1rem;
+        padding-left: 0.5rem;
+        width: auto;
+        height: auto;
+        }
+    #procedures_container{
+        grid-area: procedure;
+    }
+}
